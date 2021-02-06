@@ -1,0 +1,65 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: max-content;
+    margin-top: 10rem;
+
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        display:  block;
+    }
+    .box1{
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+     .box1{
+        margin-left: 1rem;
+    }
+}
+
+.box1, .box2{
+    flex: 1;
+}
+
+input{
+    margin: 0.5rem;
+    padding: 10px;
+    border: none;
+    border-style: none;
+    border-radius: 5px;
+    border-left: 4px solid rgb(109, 109, 218);
+    border-top: 1px solid rgb(109, 109, 218);
+    border-bottom: 1px solid rgb(109, 109, 218);
+    border-right: 1px solid rgb(109, 109, 218);
+
+    font-size: 0.8rem;
+
+}
+
+.submit-btn{
+    margin: 5px;
+    width: 5rem;
+    padding: 7px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgb(109, 109, 218);
+
+}
+
+input::placeholder{
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}

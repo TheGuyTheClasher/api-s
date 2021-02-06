@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather-app</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>{{weather_obj?.name}}, {{weather_obj?.sys.country}}</h1>
+        <small>{{weather_obj?.dt | date:'mediumDate'}} </small>
+        <small>{{weather_obj?.time}} (IST)</small>
+
+        <h1>{{weather_obj?.main.temp}}&deg;C</h1>
+        <p>Min {{weather_obj?.main.temp_min}}&deg;C | Max {{weather_obj?.main.temp_max}}&deg;C</p>
+        <h3>Wind speed: {{weather_obj?.wind.speed}}m/s</h3>
+
+        <h4>Humidity: {{weather_obj?.main.humidity}}%</h4>
+    </div>
+
+
+</body>
+
+</html>
