@@ -8,18 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class WeatherComponent implements OnInit {
 
-  @Input() weather_obj = [];
+  @Input() weather_obj;
 
 
-  res_obj: any;
 
   constructor() {
 
   }
 
   ngOnInit(): void {
-    // this.res_obj = this.weather_obj;
-    console.log(this.weather_obj);
+
 
   }
 

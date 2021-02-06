@@ -10,12 +10,13 @@ import { WeatherService } from 'src/app/services/weather.service';
 export class AppComponent {
   title = 'weather-app';
 
-  res_arr: any = [];
+  res_arr: any;
   constructor(private weatherService: WeatherService) { }
 
 
 
   getWeatherUpdate(name) {
+    // console.log(name)
     this.weatherService.getWeather(name.city_name).subscribe((data) => {
       this.res_arr = data;
       let today = new Date();
@@ -24,7 +25,7 @@ export class AppComponent {
       this.res_arr.time = time;
 
     });
-    console.log(this.res_arr);
+    // console.log(this.res_arr);
 
   };
 

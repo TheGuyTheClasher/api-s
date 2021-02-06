@@ -11,8 +11,7 @@ export class WeatherService {
   private URI = "http://api.openweathermap.org/data/2.5/weather?q="
 
   getWeather(name) {
-    this.URI = this.URI + name + "&units=metric&appid=1a519892f1765781dca5cbc681371375"
-    return this.http.get(this.URI);
+    return this.http.get(this.URI + name + "&units=metric&appid=1a519892f1765781dca5cbc681371375");
   }
 };
 
